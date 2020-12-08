@@ -53,3 +53,39 @@
 .navbar-dark .navbar-nav .nav-link:hover .x {
   visibility: visible;
 }
+
+#home {
+  display: none;
+}
+
+#home:target {
+  display: block;
+}
+#about {
+  display: none;
+}
+
+#about:target {
+  display: block;
+}
+#skills {
+  display: none;
+}
+
+#skills:target {
+  display: block;
+}
+#work {
+  display: none;
+}
+
+#work:target {
+  display: block;
+}
+#contact {
+  display: none;
+}
+
+#contact:target {
+  display: block;
+}
