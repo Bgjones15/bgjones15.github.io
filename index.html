@@ -7,18 +7,44 @@
   <meta name="author" content="Barett Jones">
   <meta name="description" content="Barett Jones Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Styling-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-  <div>
-    <div>About</div>
-    <div>Experience</div>
-    <div>Skills</div>
-    <div>Contact</div>
-  </div>
-  <div>
-    <span>Barett Jones</span><span>About</span><span>Experience</span><span>Skills</span><span>Contact</span>
-  </div>
+  <nav class="nav flex-column floatleft sidenav-bg">
+    <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+    <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+    <a class="nav-link" href="#"><i class="fas fa-code"></i></a>
+    <a class="nav-link" href="#"><i class="fas fa-file-archive"></i></a>
+    <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid topnav-bg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item selected-dark">
+            <a class="nav-link active" aria-current="page" href="#">Home &nbsp&nbsp⨯</a>
+          </li>
+          <li class="nav-item unselected-dark">
+            <a class="nav-link" href="#">About &nbsp&nbsp⨯</a>
+          </li>
+          <li class="nav-item unselected-dark">
+            <a class="nav-link" href="#">Skills &nbsp&nbsp⨯</a>
+          </li>
+          <li class="nav-item unselected-dark">
+            <a class="nav-link" href="#">Work &nbsp&nbsp⨯</a>
+          </li>
+          <li class="nav-item unselected-dark">
+            <a class="nav-link" href="#">Contact &nbsp&nbsp⨯</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </body>
 
 </html>
