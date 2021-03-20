@@ -5,7 +5,14 @@ $(function() {
     };
         
 
-    $(".navbar  a").hover(function(){
+    var app = document.getElementById('home');
 
-    });
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hey, I\'m Barett!')
+    .pauseFor(2500)
+    .start();
+
 });

@@ -3,6 +3,10 @@ body{
   color: white;
 }
 
+.content{
+  padding-left: 120px;
+}
+
 .selected-dark {
   background-color: #1e1e1e;
 }
@@ -72,8 +76,9 @@ body{
   display: none;
 }
 
-#home:target, :target {
+#home:target {
   display: block;
+  font-size: xx-large;
 }
 
 #about {
