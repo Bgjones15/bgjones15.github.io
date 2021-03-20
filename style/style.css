@@ -4,7 +4,19 @@ body{
 }
 
 .content{
-  padding-left: 120px;
+  padding: 10px;
+}
+
+.indent{
+  padding-left:40px;
+}
+
+.symbol{
+  color:#616969;
+}
+
+.tag{
+  color:#4d91d6;
 }
 
 .selected-dark {
