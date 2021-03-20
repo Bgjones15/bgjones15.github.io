@@ -11,7 +11,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Hey, I\'m Barett!')
+typewriter.typeString('Hey!')
     .pauseFor(2500)
     .start();
 
