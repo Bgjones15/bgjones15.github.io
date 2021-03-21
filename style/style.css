@@ -1,10 +1,16 @@
 body{
+  font-family: 'Monaco';
   background: #161616;
   color: white;
 }
 
 .content{
   padding: 10px;
+}
+
+.gamebutton{
+  height:50px;
+  width:50px;
 }
 
 .indent{
