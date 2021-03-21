@@ -64,7 +64,6 @@ function generateNumbers(){
         row = numbers[1];
         let adjacents = generateAdjacent(column, row, 9);
         let bombs = 0;
-        console.log(column, row);
         adjacents.forEach(a => {
             if($(`#${a}`)[0].className.includes("bomb")){
                 bombs++;
@@ -112,7 +111,15 @@ function userClick(button){
         alert("Boom");
     }
     else{
-        button.text(button[0].className[button[0].className.length - 1]);
+        if(button[0].className[button[0].className.length - 1] == 0 && !button.prop("disabled")){
+            $(button).prop("disabled", true);
+            generateAdjacent(button[0].id.split("-")[0],button[0].id.split("-")[1],9).forEach(a => {
+                $(`#${a}`).click();
+            });
+        }
+        $(button).prop("disabled", true);
+        
+        button.text(button[0].className[button[0].className.length - 1] == 0 ?"":button[0].className[button[0].className.length - 1]);
     }
 }
 
