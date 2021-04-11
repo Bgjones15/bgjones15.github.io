@@ -2,12 +2,9 @@ $(function() {
     $.getJSON( "./items.json", function( data ) {
     var items = [];
     $.each( data, function( key, val ) {
-      items.push( "<li id='" + key + "'>" + val + "</li>" );
+      items.push(val);
     });
-   
-    $( "<ul/>", {
-      "class": "my-new-list",
-      html: items.join( "" )
-    }).appendTo( "body" );
+    console.log(items);
+    
   });
 });
